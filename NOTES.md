@@ -1,31 +1,34 @@
-Notes on with amor feb28
+Notes on with Aaron feb 28th First meeting.
 
-Documentting the first meeting 
 
-Crednetital - Olaf, it allows authorization for google drive. Giving you a wristbrabnd to connect with google drive.
+def: Credential - OLAF, it allows authorization for google drive. Like a bouncer giving you a wirstbrand to go in.
 
-Singularity is like a docker. But its for savio and high performance computing systems. 
+def: Singularity is like Docker. But its for savio and high performance computing systems. eventually we will use it. 
 
-We are looking backward through the notebook. 
+1) We are looking backward through the notebook. To get a high level overview of whats happenings. ( the notebook Adam shared in the general slack channel
 
-To get a high level overview of whats happenings.
-
-We should also get docker.
-
-We just downloaded the docker and made an account 
+2) We just downloaded the docker and made an account 
 Its doing its thing in my top toolbar 
 
-1) we are running commands in docker
-2) ran some commands. Will document it. Now we are in "docker container"
-3) exit, toolive. it. 
+3) we are running commands in docker. 
+  a) open terminal
+  b) docker run -it ubuntu
+  c) docker run -it ubuntu
+now we are in a docker container.
+type "exit" to exit out of it. 
 
+to open docker container run :
 docker run -it ubuntu
 
-- /# cat /etc/os-release 
+to exit :
+exit
 
-4) to star tit "docker run -it ubuntu"
-5) to exit , "exit"
-Everything you start a new container its a new container from sractch. 
 
 6) created a new git repo for myself. 
-7) added acorn as a colloborator 
+7) added Aaron as a colloborator 
+
+8) added this file note. 
+9) told Adam that we need our team to be submitted to Savio people. 
+
+Alan:
+  So the savio cluster is something we are using, but that isn't the main focus per say. Its about connecting it to everything like google drive and working it seamlessly through all the clould services we are using the shared notebook 
