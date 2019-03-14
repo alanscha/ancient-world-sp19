@@ -17,12 +17,12 @@ Its doing its thing in my top toolbar
 now we are in a docker container.
 type "exit" to exit out of it. 
 
-to open docker container run :
+to open docker container run:
+```
 docker run -it ubuntu
+```
 
-to exit :
-exit
-
+to exit: `exit`
 
 6) created a new git repo for myself. 
 7) added Aaron as a colloborator 
