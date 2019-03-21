@@ -34,3 +34,8 @@ Alan:
   So the savio cluster is something we are using, but that isn't the main focus per say. Its about connecting it to everything like google drive and working it seamlessly through all the clould services we are using the shared notebook 
 
 ![Savio JupyterHub HTC](https://github.com/alanscha/ancient-world-sp19/blob/master/savio-jupyterhub-htc.png "Savio JupyterHub HTC")
+
+for today's session we'll use three things:
+1) your own laptop with Docker installed
+2) the Data Science Education Program (DSEP) JupyterHub infrastructure: https://datahub.berkeley.edu/
+3) Savio JupyterHub: https://jupyter.brc.berkeley.edu/
