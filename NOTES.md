@@ -35,7 +35,67 @@ Alan:
 
 ![Savio JupyterHub HTC](https://github.com/alanscha/ancient-world-sp19/blob/master/savio-jupyterhub-htc.png "Savio JupyterHub HTC")
 
+March 21st 2019, Alan and Aaron
+
 for today's session we'll use three things:
 1) your own laptop with Docker installed
 2) the Data Science Education Program (DSEP) JupyterHub infrastructure: https://datahub.berkeley.edu/
 3) Savio JupyterHub: https://jupyter.brc.berkeley.edu/
+
+Note: The following was done on Mac OS.
+An Image is like a vitual machine , and a Container is what is running that version. 
+
+We are using iterm2 because of Aaron's reccomendation.
+
+To get the datascience notebooks docker container, run: This will take around 6gigs.
+```
+docker rm -f aw; docker run -d -p 8888:8888 -v $(pwd):/home/jovyan --name aw jupyter/datascience-notebook jupyter notebook --ip=0.0.0.0 --NotebookApp.custom_display_url=http://127.0.0.1:8888; sleep 2; docker exec aw jupyter notebook list
+```
+
+Install homebrew, a package manager if you haven't yet. For macOS only:
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Using the cask keyword, install Iterm2
+```
+brew cask install iterm2
+```
+
+Now using the iterm2 terminal, we will create a directory that we will work in so standardize this procedure:
+Make sure you are in your root directory. Follow its instructions to give it permissions.
+
+```
+mkdir -p ~/work/
+cd ~/work
+```
+
+Now we will clone relevant repositories.
+```
+git clone https://github.com/alanscha/ancient-world-sp19/
+git clone https://github.com/ucberkeley/brc-cyberinfrastructure/
+```
+
+enter the brc-cyberinfrasturcture with 
+```
+cd brc-cyberinfrastructure
+```
+
+Finally, to get the right version:
+```
+git checkout dev
+```
+
+re-run docker command:
+```
+docker rm -f aw; docker run -d -p 8888:8888 -v $(pwd):/home/jovyan --name ancient-world jupyter/datascience-notebook jupyter notebook --ip=0.0.0.0 --NotebookApp.custom_display_url=http://127.0.0.1:8888; sleep 2; docker exec ancient-world jupyter notebook list
+```
+
+click the link provided by this command to open the jupyter notebook file interface.
+Now we have access to the notebooks!
+
+
+
+
+
+
