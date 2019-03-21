@@ -32,3 +32,5 @@ to exit: `exit`
 
 Alan:
   So the savio cluster is something we are using, but that isn't the main focus per say. Its about connecting it to everything like google drive and working it seamlessly through all the clould services we are using the shared notebook 
+
+![Savio JupyterHub HTC](https://github.com/alanscha/ancient-world-sp19/blob/master/savio-jupyterhub-htc.png "Savio JupyterHub HTC")
