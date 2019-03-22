@@ -88,7 +88,7 @@ git checkout dev
 
 re-run docker command:
 ```
-docker rm -f aw; docker run -d -p 8888:8888 -v $(pwd):/home/jovyan --name ancient-world jupyter/datascience-notebook jupyter notebook --ip=0.0.0.0 --NotebookApp.custom_display_url=http://127.0.0.1:8888; sleep 2; docker exec ancient-world jupyter notebook list
+docker rm -f ancient-world; docker run -d -p 8888:8888 -v $(pwd):/home/jovyan --name ancient-world jupyter/datascience-notebook jupyter notebook --ip=0.0.0.0 --NotebookApp.custom_display_url=http://127.0.0.1:8888; sleep 2; docker exec ancient-world jupyter notebook list
 ```
 
 click the link provided by this command to open the jupyter notebook file interface.
